@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "atomiki1", "atomiki1\atomiki1.csproj", "{ACBCB353-657F-4218-B384-6739A3743684}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ACBCB353-657F-4218-B384-6739A3743684}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ACBCB353-657F-4218-B384-6739A3743684}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ACBCB353-657F-4218-B384-6739A3743684}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ACBCB353-657F-4218-B384-6739A3743684}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A3B158E7-B42D-431C-A58F-3DD8F388C92B}
+	EndGlobalSection
+EndGlobal
