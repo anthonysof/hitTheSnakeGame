@@ -20,3 +20,14 @@ C:\Users\Anthony\source\repos\atomiki1\atomiki1\obj\Debug\atomiki1.csproj.Genera
 C:\Users\Anthony\source\repos\atomiki1\atomiki1\obj\Debug\atomiki1.csproj.CoreCompileInputs.cache
 C:\Users\Anthony\source\repos\atomiki1\atomiki1\obj\Debug\atomiki1.exe
 C:\Users\Anthony\source\repos\atomiki1\atomiki1\obj\Debug\atomiki1.pdb
+D:\atomiki1\atomiki1\bin\Debug\atomiki1.exe.config
+D:\atomiki1\atomiki1\bin\Debug\atomiki1.exe
+D:\atomiki1\atomiki1\bin\Debug\atomiki1.pdb
+D:\atomiki1\atomiki1\obj\Debug\atomiki1.csprojAssemblyReference.cache
+D:\atomiki1\atomiki1\obj\Debug\atomiki1.Form1.resources
+D:\atomiki1\atomiki1\obj\Debug\atomiki1.Form2.resources
+D:\atomiki1\atomiki1\obj\Debug\atomiki1.Properties.Resources.resources
+D:\atomiki1\atomiki1\obj\Debug\atomiki1.csproj.GenerateResource.cache
+D:\atomiki1\atomiki1\obj\Debug\atomiki1.csproj.CoreCompileInputs.cache
+D:\atomiki1\atomiki1\obj\Debug\atomiki1.exe
+D:\atomiki1\atomiki1\obj\Debug\atomiki1.pdb

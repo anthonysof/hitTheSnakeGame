@@ -187,7 +187,7 @@ namespace atomiki1
             if (highScore != "N/A")
                 this.highScore = int.Parse(highScore);
             else
-                this.highScore = int.MinValue;
+                this.highScore = 0;
             this.PlayerName = PlayerName;
             this.difficulty = 1;
             InitializeComponent();
@@ -225,7 +225,7 @@ namespace atomiki1
         {
             nameLabel.Text = PlayerName;
             FriendlyFireTimer.Interval = 1;
-            if (highScore != int.MinValue)
+            if (highScore != 0)
                 highScoreLabel.Text = highScore.ToString();
             else
                 highScoreLabel.Text = "N/A";

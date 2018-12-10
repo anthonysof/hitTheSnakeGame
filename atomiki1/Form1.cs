@@ -27,7 +27,7 @@ namespace atomiki1
         {
             if (!File.Exists("players.txt"))
             {
-                File.Create("players.txt");
+                File.Create("players.txt").Dispose();
             }
             nameLabel.Text = "";
             scoreLabel.Text = "";
@@ -41,6 +41,7 @@ namespace atomiki1
             richTextBox2.Text = "";
             if (richTextBox1.Text != "")
             {
+                richTextBox1.Text.Remove(richTextBox1.Text.Length - 1);
                 if (loginButton.Text != "Logout")
                 {
                     PlayerName = richTextBox1.Text;
@@ -52,16 +53,20 @@ namespace atomiki1
                         while ((line = readText.ReadLine()) != null)
                         {
                             temp = line.Split(' ');
-                            if (temp[1] != "N/A")
-                                playerDict.Add(temp[0], int.Parse(temp[1]));
-                            else
-                                playerDict.Add(temp[0], int.MinValue);
-                            if (temp[0] == PlayerName)
+                            if(temp.Length == 5)
                             {
-                                //temp[2] = DateTime.Now.ToString();
-                                found = true;
-                                MessageBox.Show("Player: " + PlayerName + " Already registered!");
-                                display = temp;
+                                if (temp[1] != "N/A")
+                                    playerDict.Add(temp[0], int.Parse(temp[1]));
+                                else
+                                    playerDict.Add(temp[0], 0);
+                                if (temp[0] == PlayerName)
+                                {
+                                    //temp[2] = DateTime.Now.ToString();
+                                    found = true;
+                                    MessageBox.Show("Player: " + PlayerName + " Already registered!");
+                                    display = temp;
+
+                                }
 
                             }
                         }
@@ -140,6 +145,14 @@ namespace atomiki1
         private void button1_Click_1(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void richTextBox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == Convert.ToChar(Keys.Return))
+            {
+                button1_Click(sender, e);
+            }
         }
     }
 }
